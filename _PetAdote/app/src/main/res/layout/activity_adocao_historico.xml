@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dejota.petadote.conteudo2.AdocaoHistorico">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="Histórico de Adoções"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:background="#EEE"/>
+
+        <GridView
+            android:id="@+id/adocao_historico_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="5dp"
+            android:numColumns="1"
+            android:layout_weight="1"
+            android:background="@color/cinza_claro">
+        </GridView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cancela"
+            android:textColor="@color/branco"
+            android:text="Fechar"
+            android:onClick="adocao_historico_cancelar"/>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/adocao_historico_pb_carregando"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/adocao_historico_mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagem"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

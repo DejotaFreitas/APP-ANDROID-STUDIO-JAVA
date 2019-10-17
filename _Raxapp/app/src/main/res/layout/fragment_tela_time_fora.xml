@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xpto.raxapp.telas.TelaTimeFora">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tela_time_fora_numeros"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="#2980b9"
+            android:text="1 - 2 - 2 - 2 - 4"/>
+
+        <ImageButton
+            android:id="@+id/tela_time_fora_limpar_numeros"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/apagar"
+            android:layout_marginLeft="8dp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tela_time_fora_random_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="120sp"
+        android:layout_margin="10dp"
+        android:text="\?"
+        android:textColor="#FFF"
+        android:background="#2980b9"/>
+
+    </LinearLayout>
+
+</FrameLayout>

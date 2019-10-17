@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dejota.menubarratitulo.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings1"
+        android:orderInCategory="100"
+        android:title="Opção 1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="Opção 2"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="100"
+        android:title="Opção 3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings4"
+        android:orderInCategory="100"
+        android:title="Opção 4"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_email"/>
+
+</menu>

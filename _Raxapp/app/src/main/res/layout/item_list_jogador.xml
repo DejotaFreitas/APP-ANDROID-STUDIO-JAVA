@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="50dp"
+    android:background="#EEE"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/item_list_jogador_nome"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.75"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Nome"
+        android:textSize="24sp"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/item_list_jogador_remover"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="0.15"
+        app:srcCompat="@drawable/back"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+
+
+
+</LinearLayout>

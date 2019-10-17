@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xpto.raxapp.telas.TelaPessoa">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+
+            <EditText
+                android:id="@+id/tela_pessoa_input_nome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="25sp"
+                android:inputType="textCapSentences"
+                android:textAlignment="center"
+                android:nextFocusDown="@id/tela_pessoa_button_add_pessoa"/>
+
+            <ImageButton
+                android:id="@+id/tela_pessoa_button_add_pessoa"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/add"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_weight="0"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/tela_pessoa_lista_pessoas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="1"
+                android:verticalSpacing="8dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

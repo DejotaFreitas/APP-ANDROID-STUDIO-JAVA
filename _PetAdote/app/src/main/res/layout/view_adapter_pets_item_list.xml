@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="2dp">
+
+
+    <ImageView
+        android:id="@+id/pets_item_list_foto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/icon"
+        android:scaleType="centerInside"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/pets_item_list_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:orientation="vertical"
+    tools:context="com.dejota.petadote.menuretratil.MenuRetratil">
+
+
+    <TextView
+        android:text="Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="Login ou Cadastro"
+        android:id="@+id/menuretratil_login"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/confirma"
+        android:textColor="@color/branco"
+        android:onClick="menuretratil_login"/>
+
+
+    <Button
+        android:text="Editar Perfil"
+        android:id="@+id/menuretratil_cadastro"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/neutro"
+        android:textColor="@color/branco"/>
+
+
+    <Button
+        android:text="Deslogar"
+        android:id="@+id/menuretratil_deslogar"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cancela"
+        android:textColor="@color/branco"
+        android:onClick="menuretratil_deslogar"/>
+
+
+
+</LinearLayout>

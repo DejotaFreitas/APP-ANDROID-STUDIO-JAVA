@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dejota.petadote.conteudo.Adocao">
+
+    <GridView
+        android:id="@+id/adocao_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="1"
+        android:background="@color/cinza_claro">
+    </GridView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/adocao_fab_historico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        app:backgroundTint="@color/rosa"
+        app:srcCompat="@drawable/icon_historico"
+        app:fabSize="mini"/>
+
+    <ProgressBar
+        android:id="@+id/adocao_pb_carregando"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/adocao_mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagem"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xpto.raxapp.telas.TelaCronometro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/tela_cronometro_iniciar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="Iniciar"
+                android:textColor="#FFFFFF"
+                android:background="#2ecc71"/>
+
+            <Button
+                android:id="@+id/tela_cronometro_pausar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:text="Pausar"
+                android:textColor="#FFFFFF"
+                android:background="#3498db"/>
+
+            <Button
+                android:id="@+id/tela_cronometro_zerar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Zerar"
+                android:textColor="#FFFFFF"
+                android:background="#e74c3c"/>
+
+        </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tela_cronometro_tempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="60sp"
+                android:text="00:00:00"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="2dp"
+    android:background="@color/branco">
+
+
+    <ImageView
+        android:id="@+id/adotante_item_list_foto"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/icon"
+        android:scaleType="centerInside"
+        android:background="@color/branco"
+        android:padding="2dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/adotante_item_list_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Nome"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/adotante_item_list_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Estado"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/adotante_item_list_cidade"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cidade"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:text="Aceitar"
+            android:id="@+id/adotante_item_lista_aceitar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/confirma"
+            android:textColor="@color/branco"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:text="Chat"
+            android:id="@+id/adotante_item_lista_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/neutro"
+            android:textColor="@color/branco"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="3dp"
+    android:background="@color/branco">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/adocao_item_list_foto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/icon"
+            android:scaleType="centerInside"
+            android:background="@color/branco"
+            android:padding="2dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="Nome"
+            android:id="@+id/adocao_item_list_nome_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Situação"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/adocao_item_list_relacao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aguardando"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/preto"
+            android:textAlignment="center"
+            android:gravity="top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:text="Sair"
+            android:id="@+id/adocao_item_lista_sair_fila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cancela"
+            android:textColor="@color/branco"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:text="Chat"
+            android:id="@+id/adocao_item_lista_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/neutro"
+            android:textColor="@color/branco"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

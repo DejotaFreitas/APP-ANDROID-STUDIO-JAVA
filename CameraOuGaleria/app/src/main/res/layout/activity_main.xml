@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dejota.cameraougaleria.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:onClick="carregarFoto"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Salvar"
+        android:onClick="salvar" />
+
+    <Button
+        android:id="@+id/listar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Listar"
+        android:onClick="listar"/>
+
+</LinearLayout>

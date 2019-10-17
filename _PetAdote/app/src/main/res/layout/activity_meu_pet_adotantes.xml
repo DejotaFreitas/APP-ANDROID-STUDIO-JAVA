@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dejota.petadote.conteudo2.MeuPetAdotantes">
+
+        <TextView
+            android:text="Fila de Adoção"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:background="#EEE"/>
+
+
+        <GridView
+            android:id="@+id/adotantes_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="5dp"
+            android:numColumns="1"
+            android:layout_weight="1"
+            android:background="@color/cinza_claro">
+        </GridView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cancela"
+            android:textColor="@color/branco"
+            android:text="Fechar"
+            android:onClick="meu_pet_adotantantes_fechar"/>
+
+</LinearLayout>

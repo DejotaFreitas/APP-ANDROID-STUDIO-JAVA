@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tela_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exemple.aula01_trocatela.TelaInicial">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bg"
+        android:id="@+id/bg"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10sp">
+
+            <TextView
+                android:text="TELA INICIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/telainicial"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:padding="15dp" />
+
+            <Button
+                android:text="Voltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_voltar"
+                android:textSize="25sp"
+                android:padding="15dp"
+                android:textColor="#FFF"
+                android:background="#b71c1c"
+                android:onClick="voltar"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

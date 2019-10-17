@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xpto.raxapp.telas.TelaJogador">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+
+            <ImageButton
+                android:id="@+id/tela_pessoa_button_limpar"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/apagar"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:layout_weight="0"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:text="Jogadores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:textSize="25sp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/tela_jogador_lista_jogadores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="1"
+                android:verticalSpacing="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

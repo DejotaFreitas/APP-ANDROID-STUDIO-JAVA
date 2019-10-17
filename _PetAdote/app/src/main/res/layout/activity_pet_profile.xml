@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dejota.petadote.conteudo2.PetProfile">
+
+
+    <ScrollView
+        android:id="@+id/pet_profile_conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/pet_profile_foto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="5dp"
+                android:background="@color/branco"
+                app:srcCompat="@drawable/icon"
+                android:scaleType="fitCenter"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/pet_profile_nome"
+                android:text="Nome: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/pet_profile_tipo"
+                android:text="Tipo: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/pet_profile_genero"
+                android:text="Gênero: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/pet_profile_faixa_etaria"
+                android:text="Faixa Etária: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/pet_profile_tamanho"
+                android:text="Tamanho: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/pet_profile_castrado"
+                android:text="Castrado: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/pet_profile_descricao"
+                android:text="Descrição: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/pet_profile_estado"
+                android:text="Estado: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/pet_profile_cidade"
+                android:text="Cidade: ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+
+            <Button
+                android:text="Entrar na lista de adoção"
+                android:id="@+id/pet_profile_entrar_lista_adocao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/rosa"
+                android:textColor="@color/branco"
+                android:onClick="pet_profile_entrarListaAdocao"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pet_profile_pb_carregando"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+</FrameLayout>

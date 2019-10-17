@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="branco">#FFF</color>
+    <color name="preto">#000</color>
+    <color name="cinza">#AAA</color>
+    <color name="cinza_claro">#DDD</color>
+    <color name="roxo">#a100ce</color>
+    <color name="confirma">#1ABC9C</color>
+    <color name="cancela">#E74C3C</color>
+    <color name="atencao">#F1C40F</color>
+    <color name="neutro">#3498DB</color>
+    <color name="desativado">#D1D5D8</color>
+    <color name="rosa">#FF4081</color>
+
+
+
+</resources>
